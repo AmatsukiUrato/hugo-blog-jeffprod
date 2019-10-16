@@ -9,3 +9,8 @@ html,body {
     }
 .mysocial { color: hsl(0, 0%, 100%);}
 .mysocial:hover { color: hsl(0, 0%, 71%) }
+
+img {
+    box-shadow: 3px 4px 6px rgba(10,10,10,0.25);
+    color: #4a4a4a;
+}

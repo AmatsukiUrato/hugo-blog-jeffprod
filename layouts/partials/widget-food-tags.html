@@ -2,9 +2,9 @@
     <div class="card-content">
         <h1 class="title is-5">Tags</h1>
         <div class="tags">
-        {{ range $name, $taxonomy := .Site.Taxonomies.tags }}{{ range where $taxonomy.Pages "Section" "post"}}
+            {{ range $name, $taxonomy := .Site.Taxonomies.tags }}{{ range where $taxonomy.Pages "Section" "food"}}
             <span class="tag"><a href="{{ "tags" | absURL }}/{{ $name | urlize }}">{{ $name }}</a></span>
-        {{ end }}{{ end }}
+            {{ end }}{{ end }}
         </div>
     </div>
 </div>

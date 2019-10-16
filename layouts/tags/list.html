@@ -11,10 +11,11 @@
                     <div class="media-content">
                         <div class="content">
                             <p class="title is-4"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></p>
-                            <p class="subtitle is-size-6 has-text-grey-light">
-                                Published at {{ .Date.Format "January 2, 2006" }} &middot;
-                                <i class="far fa-clock"></i>&nbsp;{{.ReadingTime}} min read
-                            </p>
+                            <div class="subtitle is-size-6 has-text-grey-light">
+                                <i class="fas fa-pen"></i>&nbsp;{{ .Date.Format "2006-1-2" }} |
+                                <i class="fas fa-redo-alt"></i>&nbsp;{{ .Lastmod.Format "2006-1-2" }} |
+                                <i class="fas fa-clock"></i>&nbsp;{{.ReadingTime}} min read
+                            </div>
                             <p>{{ .Summary }}...</p>
                         </div>
                     </div>
